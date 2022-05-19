@@ -1,0 +1,45 @@
+.download {
+    margin: 0 140px 0;
+    padding: 44px 44px 52px;
+
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.download h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+
+    max-width: 469px;
+}
+
+.download p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    max-width: 469px;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 22px;
+}
+
+.download::after {
+    content: url("../../assets/mac.png");
+
+    position: absolute;
+
+    left: 530px;
+    top: -90px;
+}

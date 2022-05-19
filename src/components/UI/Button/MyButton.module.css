@@ -1,0 +1,24 @@
+.myBtn {
+  width: 120px;
+  height: 40px;
+  padding: 10px 15px 10px 19.8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* COLOR */
+  background: #3a86ff;
+
+  color: #ffffff;
+  border: 1px solid #3a86ff;
+  transition: 0.3s;
+}
+
+.myBtn:hover {
+  background: #e5e5e5;
+  color: #3A86FF;
+}

@@ -1,0 +1,43 @@
+.player-bar-header {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 60px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.player-bar-header h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.player-bar-header__statistic {
+    display: flex;
+}
+
+.player-bar-header__views {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #686868;
+
+    margin-right: 50px;
+}
+
+.player-bar-header__likes {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #3a86ff;
+}

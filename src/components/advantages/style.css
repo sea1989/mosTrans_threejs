@@ -1,0 +1,27 @@
+.advantages {
+    margin: 0 140px 0;
+    padding: 126px 0px 239px;
+
+    max-width: 534px;
+
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    margin: 0;
+}
+
+.advantages span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}

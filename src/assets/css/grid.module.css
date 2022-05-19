@@ -1,0 +1,34 @@
+.player {
+  grid-area: player;
+  border: 1px solid black;
+  color: white;
+  background-color: grey;
+}
+
+.suggestions {
+  grid-area: suggestions;
+}
+
+.player-bar {
+  grid-area: comments;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 44vw 1fr;
+  grid-template-areas:
+    "player suggestions"
+    "comments suggestions";
+  row-gap: 20px;
+}
+
+.grid.wide-player {
+  grid-template-rows: 56vw 1fr;
+  grid-template-areas:
+    "player player"
+    "comments suggestions";
+}

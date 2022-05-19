@@ -1,0 +1,12 @@
+.main {
+    background-color: black;
+    background-image: url("../../assets/back.jpg");
+    width: 100%;
+
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #E7E7E7;
+}

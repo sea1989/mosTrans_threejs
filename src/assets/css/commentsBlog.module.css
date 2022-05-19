@@ -1,0 +1,77 @@
+.comments {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.comments__header {
+    display: flex;
+    gap: 44px;
+}
+
+.comments__numbers {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #686868;
+}
+
+.comments__sort {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #3a86ff;
+}
+
+.comment-item {
+    display: flex;
+
+    gap: 10px;
+}
+
+.comment-item__header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.comment-item__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #222222;
+}
+
+.comment-item__date {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #686868;
+}
+
+.comments__list {
+    padding: 0;
+}
+
+.comment-item__likes {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #4b4b4b;
+}

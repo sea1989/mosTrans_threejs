@@ -1,0 +1,49 @@
+.player-bar-description {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 60px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.player-bar-description__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.followers {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #686868;
+}
+
+.player-bar-description__main {
+    padding-left: 60px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    max-width: 60%;
+}
+
+.player-bar-description__short {
+    height: 46px;
+    overflow: hidden;
+}

@@ -1,0 +1,60 @@
+/* @import url("Main.css");
+@import url("Header.css"); */
+
+@import url("grid.module.css");
+@import url("playerBarHeader.module.css");
+@import url("playerBarDescription.module.css");
+@import url("commentsBlog.module.css");
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-standart {
+  background: #3a86ff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+
+  width: max-content;
+}
+
+.button-more {
+  color: #4b4b4b;
+
+  padding: 10px 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: white;
+  border: none;
+}
+
+.canvas-wrapper {
+  left: -371px;
+  position: absolute;
+}
