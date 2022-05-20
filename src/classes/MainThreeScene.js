@@ -27,7 +27,7 @@ class MainThreeScene {
     init(container) {
         //RENDERER SETUP
         this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-        this.renderer.setSize(window.innerWidth, window.innerHeight)
+        this.renderer.setSize(800, 420)
         this.renderer.debug.checkShaderErrors = true
         container.appendChild(this.renderer.domElement)
 
@@ -40,7 +40,7 @@ class MainThreeScene {
 
         //CAMERA AND ORBIT CONTROLLER
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        this.camera.position.set(0, 0, 1.8)
+        this.camera.position.set(0, 0, 1.3)
         this.controls = new OrbitControls(this.camera, this.renderer.domElement)
          this.controls.enabled = false
         this.controls.maxDistance = 40

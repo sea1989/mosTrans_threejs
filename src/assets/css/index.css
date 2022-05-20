@@ -6,9 +6,23 @@
 @import url("playerBarDescription.module.css");
 @import url("commentsBlog.module.css");
 
+/* Обычный */
+@font-face {
+  font-family: "Moscow Sans";
+  src: url(../fonts/MoscowSansRegular.otf);
+}
+
+/* Жирный */
+@font-face {
+  font-family: "Moscow Sans";
+  font-weight: medium;
+  src: url(../fonts/MoscowSansMedium.otf);
+}
+
 body {
-  font-family: "Roboto";
+  font-family: "Moscow Sans";
   font-style: normal;
+  font-weight: 500;
 
   margin: 0;
 }
@@ -26,35 +40,36 @@ body {
   overflow: hidden;
 }
 
-.button-standart {
-  background: #3a86ff;
+.button {
+  background: #8358ff;
   border: none;
-  border-radius: 4px;
+  border-radius: 70px;
   color: white;
 
   justify-content: center;
   align-items: center;
-  padding: 10px 12px;
+  padding: 18px 84px;
 
   width: max-content;
-}
 
-.button-more {
-  color: #4b4b4b;
-
-  padding: 10px 0px;
-
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 500;
+  font-size: 23.1476px;
+  line-height: 28px;
 
-  background-color: white;
-  border: none;
+  text-decoration: none;
 }
 
-.canvas-wrapper {
-  left: -371px;
-  position: absolute;
+.button:hover {
+  filter: drop-shadow(0px 4px 6px rgba(40, 44, 52, 0.25));
+}
+
+.button-contacts {
+  background: #e8ebed;
+
+  color: #666f78;
+}
+
+.button-contacts:hover {
+  filter: drop-shadow(0px 4px 6px rgba(40, 44, 52, 0.12));
 }

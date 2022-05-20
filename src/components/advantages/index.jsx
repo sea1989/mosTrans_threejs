@@ -13,7 +13,6 @@ export default function Advantages() {
 
       <button className='button-standart'>Download now</button>
 
-    
     </section>
   );
 }
