@@ -10,10 +10,8 @@ class ErrorPageA {
     }
 
     init(scene, metalicValue = 0.3) {
-       
 
         this.scene = scene
-        console.log(this.scene);
         //   const vTex = this.texLoader.load('./assets/textures/violetMetal.png')
         this.vMatCap = new THREE.MeshPhysicalMaterial({
             color: 0x6532F6,

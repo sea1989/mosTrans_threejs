@@ -1,105 +1,102 @@
 .main {
-    display: flex;
+  display: flex;
 
-    background-color: black;
-    background-image: url("../../assets/back.jpg");
-    width: 100%;
+  background-color: black;
+  background-image: url("../../assets/back.jpg");
+  width: 100%;
 
-    background: white;
-    min-height: 100vh;
-    color: #323232;
+  background: white;
+  min-height: 100vh;
+  color: #323232;
 }
 
 .canvas-wrapper {
-    left: 2%;
-    top: 23%;
-    position: absolute;
+  left: 2%;
+  top: 23%;
+  position: absolute;
 }
 
 .left-side {
-    width: 37%;
-    background: linear-gradient(111.61deg, #5c33ff 9.13%, #a36aff 139.72%);
-    height: 100vh;
+  width: 37%;
+  background: linear-gradient(111.61deg, #5c33ff 9.13%, #a36aff 139.72%);
+  height: 100vh;
 }
 
 .ava {
-    position: absolute;
+  position: absolute;
 
-    width: 200px;
-    height: 64px;
-    left: 31px;
-    top: 30px;
+  width: 200px;
+  height: 64px;
+  left: 31px;
+  top: 30px;
 }
 
 .four-left {
-    width: 55%;
-    padding-top: 45%;
-    margin: -8%;
+  width: 55%;
+  padding-top: 45%;
+  margin: -8%;
 }
 
 .right-side {
-    width: 63%;
-    background: linear-gradient(133.96deg, #f3f5f7 -1.88%, #f3f5f7 100%),
-        linear-gradient(110.51deg, #f9f9f9 36.89%, #f8f8f8 100%), #ededed;
-    height: 100vh;
+  width: 63%;
+  background: linear-gradient(133.96deg, #f3f5f7 -1.88%, #f3f5f7 100%),
+    linear-gradient(110.51deg, #f9f9f9 36.89%, #f8f8f8 100%), #ededed;
+  height: 100vh;
 }
 
 .four-right {
-    width: 32%;
-    padding-top: 17%;
-    margin-left: -5%;
+  width: 32%;
+  padding-top: 17%;
+  margin-left: -5%;
 }
 
 .panel {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 20%;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    gap: 32px;
+  gap: 32px;
 }
 
 .panel h1 {
-    font-family: "Moscow Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 68px;
+  font-family: "Moscow Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 68px;
 
-    margin-bottom: -16px;
+  margin-bottom: -16px;
 }
 
 .panel p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 23.105px;
-    line-height: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23.105px;
+  line-height: 28px;
 
-    margin: 0;
+  margin: 0;
 
-    max-width: 491px;
+  max-width: 491px;
 }
 
 .button-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .panel-setting {
-    padding: 40px 60px;
+  padding: 40px 60px;
 
-    background: #e2e2e2;
-    border-radius: 35px;
+  background: #e2e2e2;
+  border-radius: 35px;
 }
 
-* SVG fill falls back to text color */
-svg:not([fill]) {
-  fill: currentColor;
-}
+
 
 .sr-only {
   position: absolute;
@@ -137,18 +134,18 @@ textarea,
     scroll-behavior: auto !important;
   }
 }
-
+/* 
 html,
 body,
 #root {
   font-family: sans-serif;
-  font-size: 14px;
-  background-color: var(--color__bg);
-  height: 100%;
+  font-size: 14px; */
+  /* background-color: var(--color__bg); */
+  /* height: 100%;
   overflow: hidden;
-}
+} */
 
-.app {
+/* .app {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -168,9 +165,7 @@ body,
   line-height: 1;
   align-self: flex-end;
   padding-right: 30px;
-  font-size: 15rem;
-  color: var(--rubber-slider-ui);
-  opacity: 0.5;
-}
-
-  
+  font-size: 15rem; */
+  /* color: var(--rubber-slider-ui); */
+  /* opacity: 0.5;
+} */
