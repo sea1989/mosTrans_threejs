@@ -24,8 +24,9 @@ class MainThreeScene {
         this.bind()
     }
 
-    init(container) {
+    init(container, metalicValue) {
         //RENDERER SETUP
+        this.container = container
         this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
         this.renderer.setSize(800, 420)
         this.renderer.debug.checkShaderErrors = true
@@ -35,8 +36,6 @@ class MainThreeScene {
         // const color = new THREE.Color(0x5C33FF)
         this.scene = new THREE.Scene()
         //this.scene.background = color
-
-
 
         //CAMERA AND ORBIT CONTROLLER
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
@@ -48,7 +47,7 @@ class MainThreeScene {
         this.controls.minPolarAngle = 0;
         this.controls.maxPolarAngle = Math.PI / 2.6 + 0.3;
         CamParallax.init(this.camera)
-        ErrorPageA.init(this.scene)
+        ErrorPageA.init(this.scene, metalicValue)
         //  SpherePillards.init(this.scene)
         // Floor.init(this.scene)
         //  Spectrum.init(this.scene)
@@ -84,10 +83,15 @@ class MainThreeScene {
         this.renderer.render(this.scene, this.camera);
        // this.scene.rotateY(0.0015)
         //  SpherePillards.update()
-        ErrorPageA.update()
+       // ErrorPageA.update()
         // Spectrum.update()
         // ParticleSystem.update()
         CamParallax.update()
+    }
+
+    clear() {
+        this.container.removeChild(this.renderer.domElement)
+
     }
 
     resizeCanvas() {

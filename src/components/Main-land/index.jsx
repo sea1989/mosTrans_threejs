@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ThreeScene from '../ThreeScene';
 
 import four from '../../assets/four.svg';
-
 import logo from '../../assets/Logo.png';
+
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
+import RangeSlider from 'react-bootstrap-range-slider';
 
 import './style.css';
 
 function MainLand() {
+  const [metalicValue, setMetalicValue] = useState(0.3);
+
   return (
     <main className='main'>
       <section className='left-side'>
@@ -35,11 +39,23 @@ function MainLand() {
               Контакты
             </a>
           </div>
+
+          <section className='panel-setting'>
+            <RangeSlider
+              value={metalicValue}
+              min={0.1}
+              max={0.5}
+              step={0.1}
+              onChange={(changeEvent) =>
+                setMetalicValue(parseFloat(changeEvent.target.value))
+              }
+            />
+          </section>
         </div>
         <img className='four-right' src={four} alt='four' />
       </section>
       <div className='canvas-wrapper'>
-        <ThreeScene />
+        <ThreeScene metalicValue={metalicValue} />
       </div>
     </main>
   );
