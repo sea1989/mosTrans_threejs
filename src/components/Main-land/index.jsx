@@ -11,7 +11,8 @@ import './style.css';
 
 function MainLand() {
   const [metalicValue, setMetalicValue] = useState(0);
-  const [roughnessValue, setroughnessValue] = useState(0,4);
+  const [roughnessValue, setroughnessValue] = useState(0.4);
+  const [colorValue, setColorValue] = useState('#8358FF');
 
   return (
     <main className='main'>
@@ -61,12 +62,29 @@ function MainLand() {
                 setroughnessValue(parseFloat(changeEvent.target.value))
               }
             />
+
+            <span class='colorPicker'>
+              <input
+                id='body-color'
+                type='color'
+                value={colorValue}
+                onChange={(changeEvent) =>
+                  setColorValue(changeEvent.target.value)
+                }
+              ></input>
+              <br />
+              Body
+            </span>
           </section>
         </div>
         <img className='four-right' src={four} alt='four' />
       </section>
       <div className='canvas-wrapper'>
-        <ThreeScene metalicValue={metalicValue} roughnessValue={roughnessValue}/>
+        <ThreeScene
+          metalicValue={metalicValue}
+          roughnessValue={roughnessValue}
+          colorValue={colorValue}
+        />
       </div>
     </main>
   );
