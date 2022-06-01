@@ -16,7 +16,7 @@ function MainLand() {
 
   return (
     <main className='main'>
-      <section className='left-side'>
+      <section className='left-side' style={{background: colorValue}}>
         <a href='https://ictransport.ru/'>
           <img className='ava' src={logo} width='142' height='40' alt='logo' />
         </a>
@@ -31,7 +31,7 @@ function MainLand() {
           </p>
 
           <div className='button-wrapper'>
-            <a href='https://ictransport.ru/' className='button'>
+            <a href='https://ictransport.ru/' className='button' style={{background: colorValue}}>
               На главную
             </a>
             <a
