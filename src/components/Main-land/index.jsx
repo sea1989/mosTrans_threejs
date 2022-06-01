@@ -10,7 +10,8 @@ import RangeSlider from 'react-bootstrap-range-slider';
 import './style.css';
 
 function MainLand() {
-  const [metalicValue, setMetalicValue] = useState(0.3);
+  const [metalicValue, setMetalicValue] = useState(0);
+  const [roughnessValue, setroughnessValue] = useState(0,4);
 
   return (
     <main className='main'>
@@ -43,11 +44,21 @@ function MainLand() {
           <section className='panel-setting'>
             <RangeSlider
               value={metalicValue}
-              min={0.1}
-              max={0.5}
-              step={0.1}
+              min={0}
+              max={1}
+              step={0.2}
               onChange={(changeEvent) =>
                 setMetalicValue(parseFloat(changeEvent.target.value))
+              }
+            />
+
+            <RangeSlider
+              value={roughnessValue}
+              min={0}
+              max={1}
+              step={0.2}
+              onChange={(changeEvent) =>
+                setroughnessValue(parseFloat(changeEvent.target.value))
               }
             />
           </section>
@@ -55,7 +66,7 @@ function MainLand() {
         <img className='four-right' src={four} alt='four' />
       </section>
       <div className='canvas-wrapper'>
-        <ThreeScene metalicValue={metalicValue} />
+        <ThreeScene metalicValue={metalicValue} roughnessValue={roughnessValue}/>
       </div>
     </main>
   );

@@ -24,7 +24,7 @@ class MainThreeScene {
         this.bind()
     }
 
-    init(container, metalicValue) {
+    init(container, metalicValue, roughnessValue) {
         //RENDERER SETUP
         this.container = container
         this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -47,7 +47,7 @@ class MainThreeScene {
         this.controls.minPolarAngle = 0;
         this.controls.maxPolarAngle = Math.PI / 2.6 + 0.3;
         CamParallax.init(this.camera)
-        ErrorPageA.init(this.scene, metalicValue)
+        ErrorPageA.init(this.scene, metalicValue, roughnessValue)
         //  SpherePillards.init(this.scene)
         // Floor.init(this.scene)
         //  Spectrum.init(this.scene)

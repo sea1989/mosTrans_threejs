@@ -9,14 +9,14 @@ class ErrorPageA {
         this.texLoader = new THREE.TextureLoader()
     }
 
-    init(scene, metalicValue = 0.3) {
+    init(scene, metalicValue = 0, roughnessValue = 0.4) {
 
         this.scene = scene
         //   const vTex = this.texLoader.load('./assets/textures/violetMetal.png')
         this.vMatCap = new THREE.MeshPhysicalMaterial({
             color: 0x6532F6,
             flatShading: true,
-            roughness: 0.5,
+            roughness: roughnessValue,
             metalness: metalicValue,
             //bumpMap: this.texLoader.load('./assets/textures/bw3.jpg'),
             //bumpScale: 0.001,
