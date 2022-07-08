@@ -94,9 +94,11 @@
 
   background: #e2e2e2;
   border-radius: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-
 
 .sr-only {
   position: absolute;
@@ -113,6 +115,12 @@
   height: auto;
 }
 
+input[type="color" i] {
+  width: 130px;
+  padding: 0;
+  border: none;
+}
+
 /* dispatched single taps w/o delay */
 a,
 area,
@@ -124,6 +132,11 @@ summary,
 textarea,
 [tabindex] {
   touch-action: manipulation;
+}
+
+.range-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -140,8 +153,8 @@ body,
 #root {
   font-family: sans-serif;
   font-size: 14px; */
-  /* background-color: var(--color__bg); */
-  /* height: 100%;
+/* background-color: var(--color__bg); */
+/* height: 100%;
   overflow: hidden;
 } */
 
@@ -166,6 +179,6 @@ body,
   align-self: flex-end;
   padding-right: 30px;
   font-size: 15rem; */
-  /* color: var(--rubber-slider-ui); */
-  /* opacity: 0.5;
+/* color: var(--rubber-slider-ui); */
+/* opacity: 0.5;
 } */

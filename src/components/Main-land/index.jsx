@@ -16,7 +16,7 @@ function MainLand() {
 
   return (
     <main className='main'>
-      <section className='left-side' style={{background: colorValue}}>
+      <section className='left-side' style={{ background: colorValue }}>
         <a href='https://ictransport.ru/'>
           <img className='ava' src={logo} width='142' height='40' alt='logo' />
         </a>
@@ -31,7 +31,11 @@ function MainLand() {
           </p>
 
           <div className='button-wrapper'>
-            <a href='https://ictransport.ru/' className='button' style={{background: colorValue}}>
+            <a
+              href='https://ictransport.ru/'
+              className='button'
+              style={{ background: colorValue }}
+            >
               На главную
             </a>
             <a
@@ -43,38 +47,47 @@ function MainLand() {
           </div>
 
           <section className='panel-setting'>
-            <RangeSlider
-              value={metalicValue}
-              min={0}
-              max={1}
-              step={0.2}
-              onChange={(changeEvent) =>
-                setMetalicValue(parseFloat(changeEvent.target.value))
-              }
-            />
-
-            <RangeSlider
-              value={roughnessValue}
-              min={0}
-              max={1}
-              step={0.2}
-              onChange={(changeEvent) =>
-                setroughnessValue(parseFloat(changeEvent.target.value))
-              }
-            />
-
-            <span class='colorPicker'>
-              <input
-                id='body-color'
-                type='color'
-                value={colorValue}
+            <div className='range-wrapper'>
+              <span>Металличность</span>
+              <RangeSlider
+                value={metalicValue}
+                variant={'dark'}
+                min={0}
+                max={1}
+                step={0.2}
                 onChange={(changeEvent) =>
-                  setColorValue(changeEvent.target.value)
+                  setMetalicValue(parseFloat(changeEvent.target.value))
                 }
-              ></input>
-              <br />
-              Body
-            </span>
+              />
+            </div>
+
+            <div className='range-wrapper'>
+              <span>Текстура</span>
+              <RangeSlider
+                value={roughnessValue}
+                variant={'dark'}
+                min={0}
+                max={1}
+                step={0.2}
+                onChange={(changeEvent) =>
+                  setroughnessValue(parseFloat(changeEvent.target.value))
+                }
+              />
+            </div>
+
+            <div className='range-wrapper'>
+              <span>Цвет</span>
+              <span class='colorPicker'>
+                <input
+                  id='body-color'
+                  type='color'
+                  value={colorValue}
+                  onChange={(changeEvent) =>
+                    setColorValue(changeEvent.target.value)
+                  }
+                ></input>
+              </span>
+            </div>
           </section>
         </div>
         <img className='four-right' src={four} alt='four' />
